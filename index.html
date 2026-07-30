@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sohaima Nasir's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- ============= HERO SECTION ================== -->
+
+    <section class="hero-section" id="home">
+
+        <!-- ===== SVG DECORATION ====== -->
+
+        <svg class="decorations">
+            <rect x="30" y="30" width="110" height="110" rx="18" fill="none" stroke="var(--border)" stroke-width="1"
+                opacity="0.8" />
+
+            <rect x="55" y="55" width="85" height="85" rx="14" fill="none" stroke="var(--border)" stroke-width="1"
+                opacity="0.5" />
+
+            <circle cx="102%" cy="50%" r="180" fill="none" stroke="var(--border-light)" stroke-width="1"
+                opacity="0.9" />
+
+            <circle cx="78%" cy="38%" r="5" fill="var(--accent)" opacity="0.7" />
+
+            <rect x="88%" y="78%" width="130" height="90" rx="18" fill="none" stroke="var(--border)" stroke-width="1"
+                opacity="0.6" />
+        </svg>
+
+        <!-- Navbar -->
+
+        <nav class="top-nav">
+
+            <h2 class="logo">SN</h2>
+
+            <ul class="nav-links" id="navLinks">
+                <li data-target="home">Home</li>
+                <li data-target="about">About</li>
+                <li data-target="projects">Projects</li>
+                <li data-target="skills">Skills</li>
+                <li data-target="contact">Contact</li>
+            </ul>
+
+            <button class="btn">Let's Connect ↗</button>
+
+            <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+                <i class="fa-solid fa-bars" style="color: #b65e3c;" id="hamburger-icon"></i>
+            </div>
+
+        </nav>
+        <!-- Hero content -->
+
+        <div class="hero">
+            <p class="greeting">
+                Hi, I am
+            </p>
+
+            <h1>
+                <span class="f-name">SOHAIMA</span> NASIR
+            </h1>
+
+            <h2>
+                Full Stack Developer & AI enthusiast.
+            </h2>
+
+            <div class="divider">
+                <span class="divider-line"></span>
+                <span class="divider-diamond">✦</span>
+                <span class="divider-line"></span>
+
+            </div>
+
+            <p class="bio">
+                I build intelligent web systems from AI voice booking agents to
+                analytics dashboards using Next.js, Supabase, and modern agentic workflows.
+            </p>
+
+            <div class="buttons">
+                <button onclick="document.getElementById('projects').scrollIntoView({behavior:'smooth'})">View My
+                    Work</button>
+                <a href="https://www.linkedin.com/in/sohaimanasir-5ba780216" target="_blank" rel="noopener">
+                    <button>View LinkedIn ↗</button>
+                </a>
+            </div>
+
+            <div class="blob"></div>
+        </div>
+
+
+
+    </section>
+
+    <!-- ================ ABOUT SECTION ================= -->
+
+    <section class="about" id="about">
+
+        <svg class="decorations">
+            <rect x="-40" y="20%" width="100" height="100" rx="16" fill="none" stroke="var(--border)" stroke-width="1"
+                opacity="0.7" />
+            <circle cx="6%" cy="82%" r="4" fill="var(--accent)" opacity="0.6" />
+        </svg>
+
+        <div class="section-inner about-grid">
+
+            <div class="about-frame">
+                <div class="about-frame-inner">
+                    <span class="about-monogram">SN</span>
+                </div>
+                <div class="about-frame-tag">
+                    <i class="fa-solid fa-location-dot"></i> Karachi, Pakistan
+                </div>
+            </div>
+
+            <div class="about-content">
+                <p class="eyebrow">About</p>
+                <h2 class="section-heading">Turning ideas into<br><span class="f-name">working systems.</span></h2>
+
+                <p class="about-bio">
+                    I'm a web developer based in Karachi, currently deepening my craft through
+                    <strong>Modern Web &amp; App Development</strong> at Saylani Mass IT (SMIT) and the
+                    <strong>Agentic AI Architect</strong> track at PIAIC. What started with HTML, CSS, and
+                    Figma templates has grown into shipping full systems: voice-driven booking agents,
+                    role-based dashboards, and AI copilots that hold up under real use. I learn by
+                    doing, real problems, real stakeholders, real code.
+                </p>
+
+                <div class="about-facts">
+                    <div class="fact">
+                        <i class="fa-solid fa-briefcase"></i>
+                        <div>
+                            <span class="fact-label">Currently</span>
+                            <span class="fact-value">Development Intern @ DMatrix Solutions</span>
+                        </div>
+                    </div>
+                    <div class="fact">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                        <div>
+                            <span class="fact-label">Studying</span>
+                            <span class="fact-value">Agentic AI &amp; Robotics Engineering, PIAIC</span>
+                        </div>
+                    </div>
+                    <div class="fact">
+                        <i class="fa-solid fa-code"></i>
+                        <div>
+                            <span class="fact-label">Training</span>
+                            <span class="fact-value">Modern Web &amp; App Development, SMIT</span>
+                        </div>
+                    </div>
+                    <div class="fact">
+                        <i class="fa-solid fa-certificate"></i>
+                        <div>
+                            <span class="fact-label">Certified</span>
+                            <span class="fact-value">Cisco JavaScript Essentials 1</span>
+                        </div>
+                    </div>
+                </div>
+
+                <a href="#contact" class="text-link" data-scroll="contact">Let's build something together <i
+                        class="fa-solid fa-arrow-right"></i></a>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- ================ PROJECTS SECTION ================= -->
+
+    <section class="projects" id="projects">
+        <div class="section-inner">
+
+            <p class="eyebrow center">Projects</p>
+            <h2 class="section-heading center">Things I've built<br><span class="f-name">and things I'm building.</span>
+            </h2>
+
+            <div class="project-list">
+
+                <article class="project-card">
+                    <div class="project-media has-image">
+                        <img src="assets/overview.png" alt="SafeGuard admin dashboard overview" loading="lazy">
+                    </div>
+                    <div class="project-body">
+                        <div class="project-top">
+                            <h3>SafeGuard Pest Control</h3>
+                            <span class="status-badge status-live">Live</span>
+                        </div>
+                        <p class="project-desc">
+                            A 24/7 AI voice agent for a pest control business, built on Retell, that answers
+                            calls, checks availability, and books appointments even after hours, cutting
+                            missed calls and recovering after-hours sales. Backed by an eight-role admin
+                            dashboard, a technician portal, and live Google Calendar sync.
+                        </p>
+                        <div class="tag-row">
+                            <span>Next.js</span><span>Tailwind CSS</span><span>Retell
+                                AI</span><span>Supabase</span><span>Resend</span><span>Google Calendar</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://safeguard-wheat.vercel.app/" target="_blank" rel="noopener"
+                                class="text-link">
+                                View Live Demo <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+                            <button type="button" class="text-link gallery-trigger" data-gallery="safeguard">
+                                View Screenshots <i class="fa-solid fa-images"></i>
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-media">
+                        <i class="fa-solid fa-list-check"></i>
+                    </div>
+                    <div class="project-body">
+                        <div class="project-top">
+                            <h3>Kanban Task Manager</h3>
+                            <span class="status-badge status-live">Live</span>
+                        </div>
+                        <p class="project-desc">
+                            A role-based task manager built phase by phase from a structured spec.
+                            Features full CRUD, role-based access control, and drag-and-drop boards
+                            powered by dnd-kit, built to get authentication and data architecture
+                            right from the ground up.
+                        </p>
+                        <div class="tag-row">
+                            <span>Next.js</span><span>PostgreSQL</span><span>Prisma</span><span>Better
+                                Auth</span><span>Tailwind CSS</span><span>dnd-kit</span>
+                        </div>
+                        <a href="https://kanban-task-manager-black.vercel.app/" target="_blank" rel="noopener"
+                            class="text-link">
+                            View Live Demo <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-media">
+                        <i class="fa-solid fa-boxes-stacked"></i>
+                    </div>
+                    <div class="project-body">
+                        <div class="project-top">
+                            <h3>Supply Chain Copilot</h3>
+                            <span class="status-badge status-progress">Building Now</span>
+                        </div>
+                        <p class="project-desc">
+                            An AI copilot for supply chain teams: natural-language answers over real
+                            inventory and supplier data, always cited to the source record. It drafts
+                            purchase orders and narrates supplier scorecards automatically, but never
+                            submits one without a human's sign-off.
+                        </p>
+                        <div class="tag-row">
+                            <span>Next.js</span><span>TypeScript</span><span>Tailwind
+                                CSS</span><span>Prisma</span><span>Supabase</span><span>Better Auth</span><span>Gemini /
+                                DeepSeek</span>
+                        </div>
+                        <span class="text-link muted">Building in public <i class="fa-solid fa-hammer"></i></span>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ================ SKILLS SECTION ================= -->
+
+    <section class="skills" id="skills">
+        <div class="section-inner">
+
+            <p class="eyebrow center">Skills</p>
+            <h2 class="section-heading center">What I build with.</h2>
+
+            <div class="skills-grid">
+
+                <div class="skill-group">
+                    <h4><i class="fa-solid fa-layer-group"></i> Frontend</h4>
+                    <div class="tag-row">
+                        <span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>Next.js</span><span>React</span><span>Tailwind
+                            CSS</span><span>Bootstrap</span><span>Figma</span>
+                    </div>
+                </div>
+
+                <div class="skill-group">
+                    <h4><i class="fa-solid fa-database"></i> Backend &amp; Data</h4>
+                    <div class="tag-row">
+                        <span>PostgreSQL</span><span>Prisma</span><span>Supabase</span><span>Better Auth</span>
+                    </div>
+                </div>
+
+                <div class="skill-group">
+                    <h4><i class="fa-solid fa-robot"></i> AI &amp; Automation</h4>
+                    <div class="tag-row">
+                        <span>Agentic AI</span><span>Voice Agent Integration</span><span>Chatbot
+                            Development</span><span>Workflow Automation</span><span>Claude Code</span><span>Spec-Driven
+                            Development</span>
+                    </div>
+                </div>
+
+                <div class="skill-group">
+                    <h4><i class="fa-solid fa-certificate"></i> Certifications</h4>
+                    <div class="tag-row">
+                        <span>Cisco JavaScript Essentials 1</span><span>Mastering HTML5 and CSS3</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ================ CONTACT SECTION ================= -->
+
+    <section class="contact" id="contact">
+
+        <svg class="decorations">
+            <circle cx="94%" cy="15%" r="140" fill="none" stroke="var(--border-light)" stroke-width="1" opacity="0.8" />
+            <rect x="4%" y="70%" width="90" height="90" rx="16" fill="none" stroke="var(--border)" stroke-width="1"
+                opacity="0.6" />
+        </svg>
+
+        <div class="section-inner contact-grid">
+
+            <div class="contact-intro">
+                <p class="eyebrow">Contact</p>
+                <h2 class="section-heading">Let's build<br><span class="f-name">something together.</span></h2>
+                <p class="about-bio">
+                    Have a project in mind, or just want to say hi? My inbox is open, whether
+                    it's a landing page, a full product build, or an AI workflow you've been
+                    meaning to automate.
+                </p>
+
+                <div class="contact-links">
+                    <a href="mailto:sohaimanasir1@gmail.com" class="contact-link">
+                        <i class="fa-solid fa-envelope"></i> sohaimanasir1@gmail.com
+                    </a>
+                    <a href="https://www.linkedin.com/in/sohaimanasir-5ba780216" target="_blank" rel="noopener"
+                        class="contact-link">
+                        <i class="fa-brands fa-linkedin"></i> linkedin.com/in/sohaimanasir
+                    </a>
+                </div>
+            </div>
+
+            <form class="contact-form" id="contactForm" action="https://formspree.io/f/xojgzeqv" method="POST">
+                <label>
+                    <span>Name</span>
+                    <input type="text" name="name" required>
+                </label>
+                <label>
+                    <span>Email</span>
+                    <input type="email" name="email" required>
+                </label>
+                <label>
+                    <span>Message</span>
+                    <textarea name="message" rows="5" required></textarea>
+                </label>
+                <button type="submit" class="btn form-submit">
+                    <span class="btn-text">Send Message</span>
+                    <i class="fa-solid fa-paper-plane"></i>
+                </button>
+                <p class="form-status" id="formStatus"></p>
+            </form>
+
+        </div>
+    </section>
+
+    <!-- ================ FOOTER ================= -->
+
+    <footer class="site-footer">
+        <div class="section-inner footer-inner">
+            <span class="logo">SN</span>
+            <div class="divider footer-divider">
+                <span class="divider-line"></span>
+                <span class="divider-diamond">✦</span>
+                <span class="divider-line"></span>
+            </div>
+            <p>&copy; 2026 Sohaima Nasir. Designed &amp; built by hand.</p>
+        </div>
+    </footer>
+
+    <!-- ================ SCREENSHOT LIGHTBOX ================= -->
+
+    <div class="lightbox" id="lightbox" aria-hidden="true">
+        <button class="lightbox-close" id="lightboxClose" aria-label="Close">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+        <button class="lightbox-nav lightbox-prev" id="lightboxPrev" aria-label="Previous image">
+            <i class="fa-solid fa-chevron-left"></i>
+        </button>
+        <figure class="lightbox-figure">
+            <img class="lightbox-img" id="lightboxImg" src="" alt="">
+            <figcaption class="lightbox-caption" id="lightboxCaption"></figcaption>
+        </figure>
+        <button class="lightbox-nav lightbox-next" id="lightboxNext" aria-label="Next image">
+            <i class="fa-solid fa-chevron-right"></i>
+        </button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
