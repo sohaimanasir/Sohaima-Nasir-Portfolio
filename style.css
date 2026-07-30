@@ -1038,3 +1038,10 @@ body {
     right: 12px;
   }
 }
+
+.project-media.safeguard-logo {
+  background: var(--bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
