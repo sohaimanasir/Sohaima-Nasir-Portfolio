@@ -80,6 +80,16 @@ const galleries = {
     },
     { src: "assets/cms.png", caption: "Built-in website builder / CMS" },
   ],
+  kanban: [
+    {
+      src: "assets/kanban-login.png",
+      caption: "Landing page — personal workspace",
+    },
+    {
+      src: "assets/kanban-dashboard.png",
+      caption: "Dashboard — boards and overdue tasks at a glance",
+    },
+  ],
 };
 
 const lightbox = document.getElementById("lightbox");

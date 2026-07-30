@@ -1045,3 +1045,10 @@ body {
   align-items: center;
   justify-content: center;
 }
+
+.project-media.kanban-logo {
+  background: var(--bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
