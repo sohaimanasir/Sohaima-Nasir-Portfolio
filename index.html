@@ -49,11 +49,12 @@
 
             <button class="btn">Let's Connect ↗</button>
 
-            <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+            <div class="hamburger" id="hamburger" onclick="toggleMenu()" role="button" aria-label="Toggle menu">
                 <i class="fa-solid fa-bars" style="color: #b65e3c;" id="hamburger-icon"></i>
             </div>
 
         </nav>
+        <div class="nav-backdrop" id="navBackdrop" onclick="setMenu(false)"></div>
         <!-- Hero content -->
 
         <div class="hero">
@@ -131,13 +132,6 @@
                 </p>
 
                 <div class="about-facts">
-                    <div class="fact">
-                        <i class="fa-solid fa-briefcase"></i>
-                        <div>
-                            <span class="fact-label">Currently</span>
-                            <span class="fact-value">Development Intern @ DMatrix Solutions</span>
-                        </div>
-                    </div>
                     <div class="fact">
                         <i class="fa-solid fa-graduation-cap"></i>
                         <div>

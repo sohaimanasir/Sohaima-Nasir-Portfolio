@@ -2,9 +2,11 @@
 
 const nav = document.getElementById("navLinks");
 const icon = document.getElementById("hamburger-icon");
+const backdrop = document.getElementById("navBackdrop");
 
 function setMenu(open) {
   nav.classList.toggle("open", open);
+  backdrop.classList.toggle("open", open);
   icon.classList.toggle("fa-bars", !open);
   icon.classList.toggle("fa-xmark", open);
 }
